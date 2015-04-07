@@ -50,9 +50,9 @@ var quiz = [];
   //code here
 
 
-  var quest1 = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?', "true/false", "true", "easy");
-var quest1 = new Question('T/F: JavaScript is just a scripting version of Java', "true/false", "true", "easy");
-var quest1 = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?', "true/false", "true", "easy");
+  var quest1 = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?', "true/false", "true", "med");
+var quest2 = new Question('T/F: JavaScript is just a scripting version of Java', "true/false", "false", "easy");
+var quest3 = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value", "true/false", "true", "hard");
 //Now, let's say we wanted to create a quiz about JavaScript. Create three instances of Question which contain the following data
 //title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?'
 //title: 'T/F: JavaScript is just a scripting version of Java'
@@ -63,11 +63,20 @@ var quest1 = new Question('T/F: Inheritance is achieved in JavaScript through Pr
 
 
 //Now push all of your instances of Question into the questions Array
-
+quiz.push(quest1, quest2, quest3);
   //code here
 
 console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
-
+var loop = function(arr1, arr2) {
+	for (var i = 0; i < arr1.length; i++) {
+		for (var key in arr1[i]) {
+			console.log(arr1[i][key])
+		}
+		for (var key in arr2[i]) {
+			console.log(arr2[i][key])
+		}
+	}
   //code here
+}
 
